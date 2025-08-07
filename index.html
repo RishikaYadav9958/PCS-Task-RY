@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>KodNest Login</title>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+  />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <div class="container">
+    <img src="Banner.png" alt="Banner" class="banner" />
+
+    <img src="kodnest-logo.png" alt="Logo" class="logo" />
+    <br>
+
+    <h2 class="heading">Welcome Back, Kodnestians!</h2>
+    <p class="subtitle">Let's hustle and make your dreams come true!</p>
+
+    <form class="form" method="GET" action="">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter Your Email Id"
+        pattern="[a-z\d._%+-]+@[a-z\d.-]+\.[a-z]{2,}$"
+        title="Please enter a valid email" required />
+
+      <label for="password">Password:</label>
+      <input type="password" id="password" name="password" placeholder="Enter Password"
+        pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*\d).{12,}$"
+        title="At least 12 characters with uppercase, lowercase, and number" required />
+
+      <a href="#" class="forgot">Forgot your password?</a>
+      <button type="submit" class="login-btn">
+  <i class="fa-solid fa-arrow-right-from-bracket"></i> Log In
+</button>
+    </form>
+  </div>
+
+</body>
+</html>
